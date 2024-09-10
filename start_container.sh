@@ -2,7 +2,7 @@
 set -e
 
 # Pull the Docker image from Docker Hub
-echo
+docker pull devopsike123/devospike:latest
 
 # Run the Docker image as a container
-echo "hello"
+docker run -d -p 5000:5000 devopsike123/devospike:latest
